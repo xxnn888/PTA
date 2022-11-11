@@ -21,4 +21,13 @@ void swap(int a, int b) //交换两个数
     b = temp;
 }
 
+bool isdigit(string s) {  //判断是否全为数字
+    for (char i : s) {
+        if (!(i >= '0' && i <= '9')){
+            return false;
+        }
+    }
+    return true;
+}
+
 #endif //PTA_FUNCTION_H
